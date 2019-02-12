@@ -19,6 +19,10 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+  constructor(props) {
+    super(props);
+    console.warn(props.message);
+  }
   render() {
     return (
       <View style={styles.container}>
